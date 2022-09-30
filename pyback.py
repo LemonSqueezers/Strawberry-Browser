@@ -2,7 +2,7 @@
 
 
 import urllib.request
-print("Strawberry Backend System 1.0 \n")
+print("Strawberry Backend System 0.1 Beta \n")
 import sys
 
 
