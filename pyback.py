@@ -1,20 +1,6 @@
-
-
-
-import urllib.request
+import requests
 print("Strawberry Backend System 0.1 Beta \n")
 import sys
+r = requests.get(sys.argv[1])
 
-
-
-
-
-
-
-
-with urllib.request.urlopen("http://" + sys.argv[1]) as f: # TODO: no https!
-    body = f.read()
-    decoded_body = body.decode("utf-8")
-    print(decoded_body[:32849])
-
-
+print(r.text)
