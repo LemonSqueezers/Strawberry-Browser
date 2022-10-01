@@ -10,7 +10,8 @@ import sys
 
 
 
-infinity = float("inf")
+
+
 with urllib.request.urlopen("http://" + sys.argv[1]) as f: # TODO: no https!
     body = f.read()
     decoded_body = body.decode("utf-8")
